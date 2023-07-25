@@ -20,7 +20,9 @@ switch(estado){
 	  }
       if(mp_grid_path(Obj_mapa.mp_grid,caminho,x1,y1,x2,y2,true)){
 	      path_start(caminho,velc,path_action_stop,false);}
-	break
+	break;
+	
+}
 	
 	
 // Fazer a arma do inimigo atirar
@@ -38,7 +40,6 @@ switch(estado){
 						//  if(distance_to_object(Ronin_p1) >= 51){ 
 						//	 estado = "seguindo_Ronin";}
 								//	 }
-}
 hit_alpha = lerp(hit_alpha,0,0.1);
 if(life <= 0){
 	instance_destroy()

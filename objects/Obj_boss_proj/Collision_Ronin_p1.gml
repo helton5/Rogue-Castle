@@ -1,2 +1,2 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+Ronin_p1.toma_dano();
+instance_destroy()

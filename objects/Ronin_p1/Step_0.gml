@@ -29,7 +29,7 @@ velv = 0;
 }
 x+=Veloh;
 y+=velv;
-
+efeito_dano();
 with(my_weapon){
 	var mb;
 	var key_drop = keyboard_check_pressed(ord(" "));

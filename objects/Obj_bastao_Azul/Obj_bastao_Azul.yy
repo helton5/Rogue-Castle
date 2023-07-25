@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "Spr_bastao",
+    "path": "sprites/Spr_bastao/Spr_bastao.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

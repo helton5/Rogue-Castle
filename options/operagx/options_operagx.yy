@@ -9,7 +9,7 @@
   "option_operagx_internalShareUrl": "https://gx.games/games/69d546/ronin-castle/tracks/547559d7-064d-4bb1-b44e-6901f4e789ef/",
   "option_operagx_interpolate_pixels": true,
   "option_operagx_mod_editUrl": "",
-  "option_operagx_mod_game_name": "${project_name}",
+  "option_operagx_mod_game_name": "rogue_project",
   "option_operagx_mod_guid": "",
   "option_operagx_mod_internalShareUrl": "",
   "option_operagx_mod_next_version": "1.0.0.0",

@@ -5,10 +5,10 @@
 
 //Arco
 armas[1] = ds_map_create();
-ds_map_add(armas[1],"sprite",Marreta);
+ds_map_add(armas[1],"sprite",Marreta)
 ds_map_add(armas[1],"proj_spd",5);
 ds_map_add(armas[1],"proj_damage",25);
-ds_map_add(armas[1],"proj_count",1);
+ds_map_add(armas[1],"proj_count",3);
 ds_map_add(armas[1],"proj_delay",60);
 ds_map_add(armas[1],"auto",true);
 ds_map_add(armas[1],"drop",Obj_arco);
