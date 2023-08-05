@@ -4,12 +4,17 @@ var tecla_cima = keyboard_check(ord("W"));
 var tecla_baixo = keyboard_check(ord("S"));
 
 var teclas = tecla_direita - tecla_esquerda !=0 or tecla_baixo - tecla_cima !=0;
+if(keyboard_check(ord("R"))){
+	mostrar_vida = true
+}else{
+	mostrar_vida = false}
 if(Veloh != 0)image_xscale = sign(Veloh);
 if(teclas != 0){
 	sprite_index = sprite_ronin_run;
 }else{
 	sprite_index = Player1;
 }
+
 
 mov = point_direction(0,0,tecla_direita - tecla_esquerda, tecla_baixo - tecla_cima);
 Veloh = lengthdir_x(velc * teclas,mov);
@@ -27,6 +32,10 @@ while (!place_meeting(x,y+sign(velv),parede)){
 }
 velv = 0;
 }
+if(life <= 0){
+	velc = 0;
+	sprite_index = spr_Ronin_morto
+	morto();}
 x+=Veloh;
 y+=velv;
 efeito_dano();

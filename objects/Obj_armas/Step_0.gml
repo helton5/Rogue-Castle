@@ -17,6 +17,12 @@ if(instance_exists(arma_id)){
 		//atirar
 		for(var i = 0; i < proj_count; i ++){
 			var proj_inst = instance_create_layer(arma_x,arma_y,"Projeteis",Obj_proj);
+			if(boomerang == true){
+				audio_play_sound(arremesso_ronin,8,false);
+			}
+			if(auto == true){
+				audio_play_sound(arc_sfx,8,false);
+			}
 			proj_inst.sprite_index = proj;
 			var dist = 6;
 			var dir = arma_dir + (dist * i);

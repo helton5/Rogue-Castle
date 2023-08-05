@@ -73,4 +73,4 @@ arma_x = 0;
 arma_y = 0;
 pode_atirar = true;
 
-scr_mudar_arma(self,4);
+scr_mudar_arma(self,1);

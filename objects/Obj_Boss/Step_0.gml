@@ -36,6 +36,7 @@ case "Atacando":
 		 var _dir = 0;
 		 if alarm[0] <= 0{
 			 alarm[0] = 240
+			 audio_play_sound(arc_sfx,8,false)
 		 repeat(8){
 			var _inst = instance_create_layer(x,y,"Instances",Obj_boss_proj2);
 			_inst.speed = 1.5;
@@ -89,6 +90,7 @@ case "Atacando":
 		 if(alarm[1] <= 0){
 			 alarm[1] = 750
 			 estados = "Atacando"
+			 instance_create_layer(x,y,"Instances",Obj_vida);
 		 }
 
 	break;

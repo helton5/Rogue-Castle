@@ -17,11 +17,11 @@
   "option_operagx_mod_team_id": "",
   "option_operagx_mod_team_name": "",
   "option_operagx_mod_version": "1.0.0.0",
-  "option_operagx_next_version": "1.0.0.2",
+  "option_operagx_next_version": "1.0.0.5",
   "option_operagx_publicShareUrl": "",
   "option_operagx_scale": 0,
   "option_operagx_team_id": "95f5ad60-309d-4a44-b44b-0b5af691e579",
   "option_operagx_team_name": "hest097 studio",
   "option_operagx_texture_page": "2048x2048",
-  "option_operagx_version": "1.0.0.1",
+  "option_operagx_version": "1.0.0.4",
 }
