@@ -21,7 +21,23 @@
   "moments": {
     "resourceType": "KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion": "1.0",
-    "Keyframes": [],
+    "Keyframes": [
+      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
+              "Script4",
+            ],},},"Disabled":false,"id":"94bb155e-9bdd-408c-87e9-2bb6ef2dd800","IsCreationKey":false,"Key":6.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
+              "Script4",
+            ],},},"Disabled":false,"id":"f8a426e8-48a8-4349-bb2f-839c0671972d","IsCreationKey":false,"Key":37.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
+              "Script4",
+            ],},},"Disabled":false,"id":"80e7e6bd-67f4-473b-819b-91eed98587b3","IsCreationKey":false,"Key":67.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
+              "Script4",
+            ],},},"Disabled":false,"id":"1b2cd4c4-7b3f-4202-980a-5a2600f2ba82","IsCreationKey":false,"Key":99.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
+              "Script4",
+            ],},},"Disabled":false,"id":"e68fea59-ed3a-4590-aa46-e0d39e51c95d","IsCreationKey":false,"Key":160.0,"Length":1.0,"Stretch":false,},
+    ],
   },
   "parent": {
     "name": "Sequências",
@@ -137,7 +153,7 @@
             ],},"modifiers":[],"trackColour":4282970701,"tracks":[],"traits":0,},
       ],"traits":0,},
     {"resourceType":"GMGraphicTrack","resourceVersion":"1.0","name":"Boss_walk","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"1.0","Keyframes":[
-          {"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AssetSpriteKeyframe","resourceVersion":"1.0","Id":{"name":"Boss_walk","path":"sprites/Boss_walk/Boss_walk.yy",},},},"Disabled":false,"id":"884a55db-a5c6-4355-8f66-f8f348a2a8ca","IsCreationKey":false,"Key":0.0,"Length":180.0,"Stretch":false,},
+          {"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AssetSpriteKeyframe","resourceVersion":"1.0","Id":{"name":"Boss_walk","path":"sprites/Boss_walk/Boss_walk.yy",},},},"Disabled":false,"id":"5590861e-f08b-4d52-b30c-eae0c252123d","IsCreationKey":false,"Key":0.0,"Length":180.0,"Stretch":false,},
         ],},"modifiers":[],"trackColour":4294068341,"tracks":[
         {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"1.0","Keyframes":[
               {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,},"1":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,},},"Disabled":false,"id":"6e91947d-e352-44d4-b454-69976379dbe2","IsCreationKey":true,"Key":0.0,"Length":1.0,"Stretch":false,},
@@ -154,7 +170,10 @@
             ],},"modifiers":[],"trackColour":4294068341,"tracks":[],"traits":0,},
       ],"traits":0,},
   ],
-  "visibleRange": null,
+  "visibleRange": {
+    "x": 0.0,
+    "y": 179.9999,
+  },
   "volume": 1.0,
   "xorigin": 0,
   "yorigin": 0,

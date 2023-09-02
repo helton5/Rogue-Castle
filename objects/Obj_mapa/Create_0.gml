@@ -42,7 +42,8 @@ for(var i= 0;i<room_count;i++){
 }
 var chances = 1;
 var inimigo_max = 200;
-var saidas_max = 12;
+var saidas_max = 2;
+
 
 
 for(var xx = 0;xx < grid_width;xx++){
@@ -83,6 +84,16 @@ for(var xx = 0;xx < grid_width;xx++){
 			instance_create_layer(x1,y1,"instances",inimigo_2);
 			inimigo_max -= 1;
 			}
+			if(grid[# xx,yy] == 1){
+					var x1 = xx *  + cell_size + cell_size /2;
+					var y1 = yy * cell_size + cell_size /2;
+					var chances = 200;
+					var distancia = 120;
+					var parede_dist = 32
+					if(irandom(chances) == chances and point_distance(x1,y1,Ronin_p1.x,Ronin_p1.y)> distancia  and point_distance(x1,y1,parede.x,parede.y)> parede_dist){
+					instance_create_layer(x1,y1,"instances",Obj_saida);
+					saidas_max -= 1;}
+				}
 			}
 		}
 	 }

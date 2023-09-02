@@ -1,0 +1,1 @@
+texto = ["Finalmente te encontrei","Agora... nada pode me deter","você será minha!"]

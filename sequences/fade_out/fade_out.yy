@@ -24,7 +24,7 @@
     "Keyframes": [
       {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
               "TransitionChangeRoom",
-            ],},},"Disabled":false,"id":"eeba25c1-c05c-4bc2-bfd8-591764cc1d5a","IsCreationKey":false,"Key":59.9998,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"4ca60ac7-b7dd-4fbf-831b-706d41d07108","IsCreationKey":false,"Key":59.9999,"Length":1.0,"Stretch":false,},
     ],
   },
   "parent": {

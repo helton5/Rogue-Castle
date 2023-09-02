@@ -27,7 +27,6 @@ switch(estado){
 	
 	case "atacando_Ronin":
 		sprite_index = Spr_arc_atack;
-	  
 	  with(my_weapon){
 		  arma_dir = point_direction(x,y,Ronin_p1.x,Ronin_p1.y)
 						 atirar_inimigos();}

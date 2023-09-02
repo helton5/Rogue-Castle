@@ -1,3 +1,4 @@
+
 var tecla_direita = keyboard_check(ord("D"));
 var tecla_esquerda = keyboard_check(ord("A"));
 var tecla_cima = keyboard_check(ord("W"));
@@ -35,7 +36,8 @@ velv = 0;
 if(life <= 0){
 	velc = 0;
 	sprite_index = spr_Ronin_morto
-	morto();}
+	morto();
+	TransitionStart(Room4,fade_out,fade_in)}
 x+=Veloh;
 y+=velv;
 efeito_dano();

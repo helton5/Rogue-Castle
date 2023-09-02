@@ -3,7 +3,7 @@ switch(estados){
 	case "boss_entrada":
     var velocidade = 0.5; // Ajuste a velocidade de movimento conforme necessário
 	var destinoY= 450;
-
+	var treme = instance_create_layer(x,y,"Instances",Obj_treme)
 	if (y > destinoY)
 	{
    y -= velocidade;
@@ -106,5 +106,6 @@ with(my_weapon){
 
 hit_alpha = lerp(hit_alpha,0,0.1);
 if(life <= 0){
+	layer_sequence_create("Instances",x,y,boss_morte)
 	instance_destroy()
 }

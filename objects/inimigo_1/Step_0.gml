@@ -42,5 +42,6 @@ switch(estado){
 								//	 }
 hit_alpha = lerp(hit_alpha,0,0.1);
 if(life <= 0){
+	global.morte += 1
 	instance_destroy()
 }
