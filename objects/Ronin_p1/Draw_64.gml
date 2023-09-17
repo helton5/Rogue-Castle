@@ -1,3 +1,6 @@
+if(chave == true){
+	draw_sprite(Spr_chave,-1,1140,100)
+}
 while dano == true or mostrar_vida == true{
 if (life == 4){
 draw_sprite(Spr_vida_player,4,1080,650)

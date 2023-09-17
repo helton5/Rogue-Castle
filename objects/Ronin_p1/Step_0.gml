@@ -1,4 +1,16 @@
-
+contador += 0.01
+if(instance_exists(Obj_dialogo)){
+	return false}
+if(instance_exists(Obj_Boss)){
+	if(contador <= 5.8){
+	return false}}
+	if(distance_to_object(Obj_per_npc)) <= 200{
+		if (keyboard_check_pressed(ord("F"))){
+			var _npc = instance_nearest(x,y,Obj_per_npc);
+			var _dialogo = instance_create_layer(x,y,"Instances",Obj_dialogo);
+			_dialogo.npc_nome = _npc.nome;
+		}
+	}
 var tecla_direita = keyboard_check(ord("D"));
 var tecla_esquerda = keyboard_check(ord("A"));
 var tecla_cima = keyboard_check(ord("W"));

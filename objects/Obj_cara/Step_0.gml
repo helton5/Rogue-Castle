@@ -10,7 +10,6 @@ var mouse_click = mouse_check_button_pressed(mb_left);
 		if(meu_texto.pag >= meu_texto.pag_limite){
 			instance_destroy(meu_texto);
 			meu_texto = noone;
-			layer_sequence_destroy(Sequence4);
 			global.contador = true
 }else{
 		meu_texto.pag ++;

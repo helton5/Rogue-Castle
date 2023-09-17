@@ -14,3 +14,4 @@ colisoes = 0;
 hit_alpha = 0;
 hit_color = c_white;
 peso = 1;
+contador = 0

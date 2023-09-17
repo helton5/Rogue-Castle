@@ -1,9 +1,13 @@
-
+contador += 0.1
 switch(estados){
 	case "boss_entrada":
-    var velocidade = 0.5; // Ajuste a velocidade de movimento conforme necessário
-	var destinoY= 450;
+    var velocidade = 0.25; // Ajuste a velocidade de movimento conforme necessário
+	var destinoY= 430;
+	if(contador >= 10){
+	audio_play_sound(Sound14,2,false)
 	var treme = instance_create_layer(x,y,"Instances",Obj_treme)
+	contador -= 10
+	}
 	if (y > destinoY)
 	{
    y -= velocidade;
@@ -11,6 +15,7 @@ switch(estados){
    
    if (y <= destinoY)
    {
+	   instance_create_layer(x,y,"Instances",Obj_Action)
       estados = "Atacando";
 // Garante que o objeto não ultrapasse a posição y desejada
    }
