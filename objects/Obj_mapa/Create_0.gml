@@ -41,8 +41,9 @@ for(var i= 0;i<room_count;i++){
 	}
 }
 var chances = 1;
-var inimigo_max = 200;
-var saidas_max = 2;
+var inimigo_max = 15;
+var inimigo_max2 = 10;
+var saidas_max = 1;
 
 
 
@@ -73,26 +74,31 @@ for(var xx = 0;xx < grid_width;xx++){
 			   instance_create_layer(x1,y1,"instances",Ronin_p1);
 		}//posso criar inimigos
 		if(inimigo_max > 0){
-			var chances = 100;
+			var chances = 50;
 			var distancia = 120;
 			if(irandom(chances) == chances and point_distance(x1,y1,Ronin_p1.x,Ronin_p1.y)> distancia){
 			instance_create_layer(x1,y1,"instances",inimigo_1);
 			inimigo_max -= 1;
 			}
 		}
+			if(inimigo_max2 > 0){
+				var chances = 100;
 			if(irandom(chances) == chances and point_distance(x1,y1,Ronin_p1.x,Ronin_p1.y)>= 200){
 			instance_create_layer(x1,y1,"instances",inimigo_2);
-			inimigo_max -= 1;
+			inimigo_max2 -= 1;
+			}
 			}
 			if(grid[# xx,yy] == 1){
+				if(saidas_max > 0){
 					var x1 = xx *  + cell_size + cell_size /2;
 					var y1 = yy * cell_size + cell_size /2;
-					var chances = 200;
+					var chances = 1;
 					var distancia = 120;
 					var parede_dist = 32
 					if(irandom(chances) == chances and point_distance(x1,y1,Ronin_p1.x,Ronin_p1.y)> distancia  and point_distance(x1,y1,parede.x,parede.y)> parede_dist){
 					instance_create_layer(x1,y1,"instances",Obj_saida);
 					saidas_max -= 1;}
+				}
 				}
 			}
 		}

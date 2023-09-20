@@ -49,7 +49,8 @@ if(life <= 0){
 	velc = 0;
 	sprite_index = spr_Ronin_morto
 	morto();
-	TransitionStart(Room4,fade_out,fade_in)}
+	TransitionStart(Room4,fade_out,fade_in)
+	global.Pause = true}
 x+=Veloh;
 y+=velv;
 efeito_dano();
@@ -62,7 +63,6 @@ with(my_weapon){
 		mb = mouse_check_button_pressed(mb_left);
 	}
 		
-
 		
 		
 	arma_dir = point_direction(x,y,mouse_x,mouse_y);

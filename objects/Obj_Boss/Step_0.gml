@@ -28,7 +28,9 @@ case "Atacando":
         var direcao = point_direction(x, y, Ronin_p1.x, Ronin_p1.y);
         x += lengthdir_x(velocidade, direcao);
         y += lengthdir_y(velocidade, direcao);
-        
+        if(place_meeting(x,y,Ronin_p1)){
+		Ronin_p1.toma_dano();
+			}
         // Atualiza o ângulo de rotação
         image_angle += velocidadeRotacao;
 	if (alarm[1] <= 0) {
@@ -111,6 +113,5 @@ with(my_weapon){
 
 hit_alpha = lerp(hit_alpha,0,0.1);
 if(life <= 0){
-	layer_sequence_create("Instances",x,y,boss_morte)
 	instance_destroy()
 }

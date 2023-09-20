@@ -9,6 +9,7 @@ dano = false
 morto = false
 mostrar_vida = false
 chave = false
+global.Pause = false
 my_weapon = instance_create_layer(x,y,"Weapons",Obj_armas);
 my_weapon.arma_id = self;
 efeito_dano = function()
@@ -22,6 +23,7 @@ efeito_dano = function()
 toma_dano = function(){
 	if(dano) return;
 	life --;
+	audio_play_sound(Sound17,1,false)
 	dano = true;
 	alarm[0] = temp_inv
 }

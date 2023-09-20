@@ -20,7 +20,12 @@ if(instance_exists(arma_id)){
 			if(boomerang == true){
 				audio_play_sound(arremesso_ronin,8,false);
 			}
-			if(auto == true){
+			if(sprite == spr_arco){
+				audio_play_sound(arc_sfx,8,false);
+			}
+			if(sprite == Sprite63){
+				audio_play_sound(Sound19,8,false);}
+			if(sprite == Spr_bastao){
 				audio_play_sound(arc_sfx,8,false);
 			}
 			proj_inst.sprite_index = proj;

@@ -40,8 +40,11 @@ switch(estado){
 						//  if(distance_to_object(Ronin_p1) >= 51){ 
 						//	 estado = "seguindo_Ronin";}
 								//	 }
+if(place_meeting(x,y,Ronin_p1)){
+	Ronin_p1.toma_dano();
+}
+
 hit_alpha = lerp(hit_alpha,0,0.1);
 if(life <= 0){
-	global.morte += 1
 	instance_destroy()
 }

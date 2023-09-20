@@ -27,37 +27,55 @@ function ScriptsTextos(){
 			ds_grid_add_text("Então porque você não me ajuda? você era chefe...deve saber alguma coisa",Spr_Ronin_profile,0,"Ronin");
 			ds_grid_add_text("estou fora de forma",Spr_mercador_shy,0,"Mercador");
 			ds_grid_add_text("Mas eu tenho esses três itens que podem te ajudar",Spr_mercador_feliz69,0,"Mercador");
-			ds_grid_add_text("O primeiro é um boomerangue, dispara lento mais doí na ida e na volta, muito bom contra os tornados do major",Spr_mercador_feliz69,0,"Mercador");
-			ds_grid_add_text("O segundo dispara água pressuriada, uma arminha d'agua no caso, muitos disparos, mas pouco dano cada um deles",Spr_mercador_feliz,0,"Mercador");
+			ds_grid_add_text("O primeiro é um bumerangue, dispara lento, mas doí na ida e na volta, muito bom contra os tornados do major",Spr_mercador_feliz69,0,"Mercador");
+			ds_grid_add_text("O segundo dispara água, uma arminha d'agua no caso, muitos disparos, mas pouco dano",Spr_mercador_feliz,0,"Mercador");
 			ds_grid_add_text("O terceiro é um estilingue, recarrega igual a um arco e dispara três fragmentos",Spr_mercador_feliz69,0,"Mercador");
 				ds_grid_add_text("Sinta-se livre para perguntar qualquer coisa",Spr_mercador_feliz,0,"Mercador");
-				add_op("O que cada objeto faz?","Resposta 1");
-				add_op("Como você conseguiu eles?","Resposta 2");
-				add_op("Você gostava de capturar os animais?","Resposta 3");
+				add_op("Sair","Resposta 3");
+				add_op("Quero Enfrentar o major","Resposta 1");
+				add_op("O que cada objeto faz?","Resposta 2");
+				
 			
 		break;
-			case "Resposta 1":
-			ds_grid_add_text("O primeiro é um boomerangue, dispara lento mais doí na ida e na volta, muito bom contra os tornados do major",Spr_mercador_feliz69,0,"Mercador");
-			ds_grid_add_text("O segundo dispara água pressurizada, uma arminha d'agua no caso, muitos disparos, mas pouco dano cada um deles",Spr_mercador_feliz,0,"Mercador");
-			ds_grid_add_text("O terceiro é um estilingue, recarrega igual a um arco e dispara três fragmentos",Spr_mercador_feliz69,0,"Mercador");
-		break;
 			case "Resposta 2":
-				ds_grid_add_text("Quando eu era líder dos caçadores eu tinha acesso a todas as técnologias de ponta",Spr_mercador,0,"Mercador");
-				ds_grid_add_text("Diante de você está as mais formidaveis armas para captura de animais",Spr_mercador,0,"Mercador",2);
-				ds_grid_add_text("Mesmo que hoje em dia eu não me orgulho disso",Spr_mercador_shy,0,"Mercador");
-				add_op("Você gostava de capturar os animais?","Resposta 3");
-				add_op("O que cada objeto faz?","Resposta 1");
+			ds_grid_add_text("O primeiro é um bumerangue, dispara lento, mas doí na ida e na volta, muito bom contra os tornados do major",Spr_mercador_feliz69,0,"Mercador");
+			ds_grid_add_text("O segundo dispara água, uma arminha d'água no caso, muitos disparos, mas pouco dano cada um deles",Spr_mercador_feliz,0,"Mercador");
+			ds_grid_add_text("O terceiro é um estilingue, recarrega igual a um arco e dispara três fragmentos",Spr_mercador_feliz69,0,"Mercador");
+				add_op("Sair","Resposta 3");
+				add_op("Quero Enfrentar o major","Resposta 1");
+		break;
+			case "Resposta 1":
+				ds_grid_add_text("já pegou o item que combina mais com você?",Spr_mercador,0,"Mercador");
+				add_op("Não","Resposta 5");
+				add_op("Sim","Resposta 4");
 		break;
 				case "Resposta 3":
-				ds_grid_add_text("Claro que não",Spr_mercador,0,"Mercador");
-				ds_grid_add_text("Eu odiava ver o rosto triste deles",Spr_mercador,0,"Mercador",2);
-				ds_grid_add_text("Faz anos que eu estava soltando eles escondidos",Spr_mercador,0,"Mercador");
-				ds_grid_add_text("Mas...três dias atrás eles me pegaram soltando uma capivara",Spr_mercador_shy,0,"Mercador",2)
-				ds_grid_add_text("Agora estou preso junto com os bichinhos que soltei",Spr_mercador_shy,0,"Mercador",2)
-				add_op("Como você conseguiu eles?","Resposta 2");
-				add_op("O que cada objeto faz?","Resposta 1");
+				ds_grid_add_text("Adeus",Spr_mercador_feliz,0,"Mercador");
 				
 				
+		break;
+			case "Resposta 4":
+				ds_grid_add_text("Qual você escolheu",Spr_mercador,0,"Mercador");
+				add_op("Bumerangue","Resposta 6");
+				add_op("Arminha d'água","Resposta 7");
+				add_op("estilingue","Resposta 8");
+		break;
+			case "Resposta 5":
+				ds_grid_add_text("Então...o que quer saber ou fazer?",Spr_mercador,0,"Mercador");
+					add_op("Sair","Resposta 3");
+					add_op("O que cada objeto faz?","Resposta 2");
+		break;
+			case "Resposta 6":
+				ds_grid_add_text("Certo",Spr_mercador_feliz,0,"Mercador");
+						TransitionStart(Ambiente12_boo,fade_out,fade_in)
+		break;
+				case "Resposta 7":
+				ds_grid_add_text("Certo",Spr_mercador_feliz,0,"Mercador");
+						TransitionStart(Ambiente12_aqua,fade_out,fade_in)
+		break;
+			case "Resposta 8":
+				ds_grid_add_text("Certo",Spr_mercador_feliz,0,"Mercador");
+						TransitionStart(Ambiente12_esti,fade_out,fade_in)
 		break;
 }
 }

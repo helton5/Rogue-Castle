@@ -15,4 +15,4 @@ for(var i =0;i < op_max;i ++){
 
 draw_set_font(-1);
 draw_sprite(Sprite45,1,200,150);
-draw_text(100,700,"Aperte 'S' para sair")
+draw_text(150,700,"Aperte 'S' para sair")
